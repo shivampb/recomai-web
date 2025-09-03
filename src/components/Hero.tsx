@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Bot, ShoppingCart, Sparkles } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Bot, ShoppingCart, Sparkles } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear",
           }}
         />
         <motion.div
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear",
           }}
         />
       </div>
@@ -45,19 +45,23 @@ const Hero: React.FC = () => {
             >
               <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
                 <Sparkles className="w-5 h-5 text-blue-600 mr-2" />
-                <span className="text-sm font-semibold text-gray-700">Powered by Next-Gen Agentic AI</span>
+                <span className="text-sm font-semibold text-gray-700">
+                  Powered by Next-Gen Agentic AI
+                </span>
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                Transform Your{' '}
+                Transform Your{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Shopify Store
-                </span>{' '}
-                with AI-Powered Product Recommendations
+                </span>{" "}
+                with ReComAI
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-                ReComAI empowers eCommerce brands to increase revenue, boost conversions, and deliver personalized shopping journeys — powered by next-generation Agentic AI.
+                ReComAI empowers eCommerce brands to increase revenue, boost
+                conversions, and deliver personalized shopping journeys —
+                powered by next-generation Agentic AI.
               </p>
             </motion.div>
 
@@ -80,8 +84,8 @@ const Hero: React.FC = () => {
                   className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
                   animate={{
                     boxShadow: [
-                      '0 0 0 0 rgba(59, 130, 246, 0.5)',
-                      '0 0 0 10px rgba(59, 130, 246, 0)',
+                      "0 0 0 0 rgba(59, 130, 246, 0.5)",
+                      "0 0 0 10px rgba(59, 130, 246, 0)",
                     ],
                   }}
                   transition={{
@@ -133,7 +137,9 @@ const Hero: React.FC = () => {
                     <Bot className="w-6 h-6" />
                     <span className="font-semibold">RecomAI Assistant</span>
                   </div>
-                  <p className="text-sm opacity-90">Analyzing customer behavior...</p>
+                  <p className="text-sm opacity-90">
+                    Analyzing customer behavior...
+                  </p>
                 </div>
 
                 {/* Mock Product Grid */}
@@ -161,7 +167,9 @@ const Hero: React.FC = () => {
                   className="bg-green-100 border border-green-300 rounded-lg p-3 text-center"
                 >
                   <ShoppingCart className="w-6 h-6 text-green-600 mx-auto mb-1" />
-                  <p className="text-sm text-green-700 font-semibold">+47% Conversion Rate!</p>
+                  <p className="text-sm text-green-700 font-semibold">
+                    +47% Conversion Rate!
+                  </p>
                 </motion.div>
               </div>
             </div>
