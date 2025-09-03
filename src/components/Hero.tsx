@@ -144,19 +144,69 @@ const Hero: React.FC = () => {
 
                 {/* Mock Product Grid */}
                 <div className="grid grid-cols-2 gap-4">
-                  {[1, 2, 3, 4].map((item) => (
-                    <motion.div
-                      key={item}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.5 + item * 0.1 }}
-                      className="bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-white/40"
-                    >
-                      <div className="w-full h-20 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg mb-2"></div>
-                      <div className="h-2 bg-gray-300 rounded mb-1"></div>
-                      <div className="h-2 bg-gray-200 rounded w-3/4"></div>
-                    </motion.div>
-                  ))}
+                  {/* Product 1 */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-white/40"
+                  >
+                    <img
+                      src="https://media.gettyimages.com/id/2210675120/photo/a-white-cosmetic-jar-floats-in-a-surreal-rocky-canyon-lit-with-dramatic-lighting.jpg?s=612x612&w=0&k=20&c=bsN-9LgK9NhCIMJ9mWTjpOWN5pOjHy7z_dPlXh1bR-s="
+                      alt="Product 1"
+                      className="w-full h-20 object-cover rounded-lg mb-2"
+                    />
+                    <div className="h-2 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+                  </motion.div>
+
+                  {/* Product 2 */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.6 }}
+                    className="bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-white/40"
+                  >
+                    <img
+                      src="https://media.gettyimages.com/id/1404863415/photo/white-cream-tube-near-white-orchid-flower-on-light-yellow-mockup-skincare-product.jpg?s=612x612&w=0&k=20&c=61S4XigkBxVMmXqRWl7roo8ZrnFGnZrESUrKz6MqItY="
+                      alt="Product 2"
+                      className="w-full h-20 object-cover rounded-lg mb-2"
+                    />
+                    <div className="h-2 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+                  </motion.div>
+
+                  {/* Product 3 */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.7 }}
+                    className="bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-white/40"
+                  >
+                    <img
+                      src="https://media.gettyimages.com/id/2210406877/photo/white-plastic-medicine-jar-on-stone-yellow-background-mock-up.jpg?s=612x612&w=0&k=20&c=6OgEStJanJXaPZf0QEcbBu7aD8n_bZ3JXPPRtg43_IE="
+                      alt="Product 3"
+                      className="w-full h-20 object-cover rounded-lg mb-2"
+                    />
+                    <div className="h-2 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+                  </motion.div>
+
+                  {/* Product 4 */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.8 }}
+                    className="bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-white/40"
+                  >
+                    <img
+                      src="https://media.gettyimages.com/id/1349489169/photo/face-serum-in-green-glass-bottles-in-bright-sunlight-over-pink-background-popular-skin-care.jpg?s=612x612&w=0&k=20&c=BO_35q9ZvWUR9JRmpiUFDCDXYZyttDeoOhBYBMd3CnI="
+                      alt="Product 4"
+                      className="w-full h-20 object-cover rounded-lg mb-2"
+                    />
+                    <div className="h-2 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+                  </motion.div>
                 </div>
 
                 {/* Mock Conversion Indicator */}
