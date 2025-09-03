@@ -138,7 +138,7 @@ const Hero: React.FC = () => {
                     <span className="font-semibold">RecomAI Assistant</span>
                   </div>
                   <p className="text-sm opacity-90">
-                    Analyzing customer behavior...
+                    Analyzing customer behavior and recommend products...
                   </p>
                 </div>
 
