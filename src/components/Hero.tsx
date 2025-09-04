@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-14">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
           {/* Left Content */}
           <div className="space-y-8">
@@ -52,8 +52,8 @@ const Hero: React.FC = () => {
 
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 Transform Your{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Shopify Store
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">
+                  Ecommerce Store
                 </span>{" "}
                 with ReComAI
               </h1>
