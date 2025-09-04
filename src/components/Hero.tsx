@@ -8,6 +8,7 @@ const Hero: React.FC = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div
+        
           className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
