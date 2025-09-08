@@ -19,7 +19,7 @@ const ProblemSolution: React.FC = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             The Problem with{' '}
-            <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+            <span className="text-[#0ca565] bg-clip-text text-transparent">
               Generic Stores
             </span>
           </h2>
@@ -79,9 +79,9 @@ const ProblemSolution: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-8"
           >
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg border-l-4 border-blue-500 relative overflow-hidden">
+            <div className="bg-gradient-to-br from-primary/10 to-white rounded-2xl p-8 shadow-lg border-l-4 border-primary relative overflow-hidden">
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-purple-400/10"
+                className="absolute inset-0 bg-gradient-to-r from-primary/10 to-white/10"
                 animate={{
                   scale: [1, 1.05, 1],
                   opacity: [0.3, 0.6, 0.3],
@@ -95,7 +95,7 @@ const ProblemSolution: React.FC = () => {
               
               <div className="relative z-10">
                 <div className="flex items-center mb-4">
-                  <CheckCircle className="w-8 h-8 text-blue-500 mr-3" />
+                  <CheckCircle className="w-8 h-8 text-primary mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">After RecomAI</h3>
                 </div>
                 
@@ -138,7 +138,7 @@ const ProblemSolution: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex justify-center mt-12"
         >
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg">
+          <div className="bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg">
             RecomAI makes the difference →
           </div>
         </motion.div>

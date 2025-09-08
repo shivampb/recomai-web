@@ -64,14 +64,14 @@ const FAQ: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mb-6">
-            <HelpCircle className="w-5 h-5 text-blue-600 mr-2" />
+          <div className="inline-flex items-center px-6 py-3 bg-primary/10 rounded-full mb-6">
+            <HelpCircle className="w-5 h-5 text-primary mr-2" />
             <span className="text-sm font-semibold text-gray-700">Frequently Asked Questions</span>
           </div>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Everything You Need to{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-primary">
               Know About RecomAI
             </span>
           </h2>
@@ -93,11 +93,11 @@ const FAQ: React.FC = () => {
               <div className="bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
                 <motion.button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300"
+                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-primary/5 transition-all duration-300"
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.99 }}
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 pr-4 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-lg font-semibold text-gray-900 pr-4 group-hover:text-primary transition-colors">
                     {faq.question}
                   </h3>
                   <motion.div
@@ -106,9 +106,9 @@ const FAQ: React.FC = () => {
                     className="flex-shrink-0"
                   >
                     {openIndex === index ? (
-                      <Minus className="w-6 h-6 text-blue-600" />
+                      <Minus className="w-6 h-6 text-primary" />
                     ) : (
-                      <Plus className="w-6 h-6 text-gray-400 group-hover:text-blue-600 transition-colors" />
+                      <Plus className="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" />
                     )}
                   </motion.div>
                 </motion.button>
@@ -148,7 +148,7 @@ const FAQ: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border border-blue-100"
+          className="text-center mt-16 p-8 bg-primary/5 rounded-2xl border border-primary/20"
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             Still Have Questions?
@@ -160,14 +160,14 @@ const FAQ: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="px-8 py-3 bg-primary text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Schedule a Call
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 border-2 border-blue-200 text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all duration-300"
+              className="px-8 py-3 border-2 border-primary/50 text-primary font-semibold rounded-xl hover:bg-primary/10 transition-all duration-300"
             >
               Contact Support
             </motion.button>

@@ -4,12 +4,12 @@ import { ArrowRight, Bot, ShoppingCart, Sparkles } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-primary/10 via-white to-primary/10 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div
         
-          className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-primary/20 to-white/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             rotate: [0, 180, 360],
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-blue-400/20 rounded-full blur-3xl"
+          className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-white/20 to-primary/20 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             rotate: [360, 180, 0],
@@ -44,8 +44,8 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
-              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
-                <Sparkles className="w-5 h-5 text-blue-600 mr-2" />
+              <div className="inline-flex items-center px-4 py-2 bg-primary/20 rounded-full">
+                <Sparkles className="w-5 h-5 text-primary mr-2" />
                 <span className="text-sm font-semibold text-gray-700">
                   Powered by Next-Gen Agentic AI
                 </span>
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
 
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 Transform Your{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">
+                <span className="text-primary whitespace-nowrap">
                   Ecommerce Store
                 </span>{" "}
                 with ReComAI
@@ -75,18 +75,18 @@ const Hero: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group relative px-8 py-4 bg-primary text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   Get a Free Demo
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute inset-0 bg-primary/90 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
                   animate={{
                     boxShadow: [
-                      "0 0 0 0 rgba(59, 130, 246, 0.5)",
-                      "0 0 0 10px rgba(59, 130, 246, 0)",
+                      "0 0 0 0 rgba(12, 165, 101, 0.5)",
+                      "0 0 0 10px rgba(12, 165, 101, 0)",
                     ],
                   }}
                   transition={{
@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
                 />
               </motion.button>
 
-              <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-blue-500 hover:text-blue-600 transition-colors duration-300">
+              <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-primary hover:text-primary transition-colors duration-300">
                 View Case Studies
               </button>
             </motion.div>
@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
             <div className="relative bg-white/20 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border border-white/30">
               <div className="space-y-6">
                 {/* Mock AI Interface */}
-                <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-xl text-white">
+                <div className="bg-primary p-4 rounded-xl text-white">
                   <div className="flex items-center space-x-3 mb-3">
                     <Bot className="w-6 h-6" />
                     <span className="font-semibold">RecomAI Assistant</span>

@@ -45,7 +45,7 @@ const SocialProof: React.FC = () => {
   ];
 
   return (
-    <div ref={ref} className="py-24 bg-gradient-to-br from-gray-50 to-blue-50/30">
+    <div ref={ref} className="py-24 bg-gradient-to-br from-gray-50 to-primary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -56,7 +56,7 @@ const SocialProof: React.FC = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Trusted by{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-primary">
               Leading Brands
             </span>
           </h2>
@@ -103,7 +103,7 @@ const SocialProof: React.FC = () => {
             >
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 h-full relative overflow-hidden">
                 {/* Quote icon */}
-                <Quote className="absolute top-4 right-4 w-8 h-8 text-blue-200 transform rotate-180" />
+                <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/20 transform rotate-180" />
                 
                 <div className="space-y-6">
                   {/* Rating */}
@@ -127,7 +127,7 @@ const SocialProof: React.FC = () => {
 
                   {/* Author */}
                   <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                       {testimonial.avatar}
                     </div>
                     <div>
@@ -143,7 +143,7 @@ const SocialProof: React.FC = () => {
 
                 {/* Hover gradient */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 />
               </div>
             </motion.div>
@@ -168,7 +168,7 @@ const SocialProof: React.FC = () => {
                 animate={isInView ? { opacity: 0.7, scale: 1 } : {}}
                 transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
                 whileHover={{ opacity: 1, scale: 1.1 }}
-                className="bg-gray-100 rounded-lg p-4 text-center font-bold text-gray-600 hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 transition-all duration-300"
+                className="bg-gray-100 rounded-lg p-4 text-center font-bold text-gray-600 hover:bg-primary/10 transition-all duration-300"
               >
                 {logo}
               </motion.div>

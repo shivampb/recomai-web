@@ -9,14 +9,14 @@ const FinalCTA: React.FC = () => {
   return (
     <div ref={ref} className="py-24 relative overflow-hidden">
       {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
+      <div className="absolute inset-0 bg-primary">
         <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-purple-600/80"
+          className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60"
           animate={{
             background: [
-              'linear-gradient(45deg, rgba(59, 130, 246, 0.8), rgba(147, 51, 234, 0.8))',
-              'linear-gradient(45deg, rgba(147, 51, 234, 0.8), rgba(236, 72, 153, 0.8))',
-              'linear-gradient(45deg, rgba(236, 72, 153, 0.8), rgba(59, 130, 246, 0.8))',
+              'linear-gradient(45deg, rgba(12, 165, 101, 0.8), rgba(12, 165, 101, 0.6))',
+              'linear-gradient(45deg, rgba(12, 165, 101, 0.6), rgba(12, 165, 101, 0.4))',
+              'linear-gradient(45deg, rgba(12, 165, 101, 0.4), rgba(12, 165, 101, 0.8))',
             ],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
@@ -112,7 +112,7 @@ const FinalCTA: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-12 py-6 bg-white text-blue-600 font-bold text-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300"
+              className="group relative px-12 py-6 bg-white text-primary font-bold text-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300"
             >
               <span className="relative z-10 flex items-center">
                 <Rocket className="w-6 h-6 mr-3" />
@@ -120,7 +120,7 @@ const FinalCTA: React.FC = () => {
                 <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </span>
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute inset-0 bg-gradient-to-r from-primary/10 to-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               />
             </motion.button>
 

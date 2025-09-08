@@ -41,7 +41,7 @@ const Pricing: React.FC = () => {
       cta: "Get Started",
       popular: true,
       icon: Star,
-      gradient: "from-blue-500 to-purple-600"
+      gradient: "from-primary to-white"
     },
     {
       name: "Enterprise",
@@ -60,7 +60,7 @@ const Pricing: React.FC = () => {
       cta: "Contact Sales",
       popular: false,
       icon: Crown,
-      gradient: "from-purple-500 to-pink-600"
+      gradient: "from-primary to-white"
     }
   ];
 
@@ -76,7 +76,7 @@ const Pricing: React.FC = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Choose Your{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-primary">
               Perfect Plan
             </span>
           </h2>
@@ -104,7 +104,7 @@ const Pricing: React.FC = () => {
                   transition={{ delay: 0.5 }}
                   className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20"
                 >
-                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  <div className="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
                     Most Popular
                   </div>
                 </motion.div>
@@ -112,18 +112,18 @@ const Pricing: React.FC = () => {
 
               <div className={`h-full bg-white rounded-2xl shadow-lg border-2 transition-all duration-500 overflow-hidden ${
                 plan.popular 
-                  ? 'border-blue-200 hover:border-blue-300 hover:shadow-2xl' 
-                  : 'border-gray-200 hover:border-blue-200 hover:shadow-xl'
+                  ? 'border-primary/50 hover:border-primary/70 hover:shadow-2xl' 
+                  : 'border-gray-200 hover:border-primary/50 hover:shadow-xl'
               }`}>
                 {/* Animated border gradient */}
                 {plan.popular && (
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-2xl"
+                    className="absolute inset-0 bg-gradient-to-r from-primary to-white opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-2xl"
                     animate={{
                       background: [
-                        'linear-gradient(45deg, #3b82f6, #8b5cf6)',
-                        'linear-gradient(45deg, #8b5cf6, #3b82f6)',
-                        'linear-gradient(45deg, #3b82f6, #8b5cf6)',
+                        'linear-gradient(45deg, #0ca565, #ffffff)',
+                        'linear-gradient(45deg, #ffffff, #0ca565)',
+                        'linear-gradient(45deg, #0ca565, #ffffff)',
                       ],
                     }}
                     transition={{ duration: 3, repeat: Infinity }}
@@ -149,7 +149,7 @@ const Pricing: React.FC = () => {
                     {/* Pricing */}
                     <div className="space-y-1">
                       <div className="flex items-baseline justify-center space-x-2">
-                        <span className={`text-4xl font-bold ${plan.name === 'Starter' ? 'text-green-600' : plan.popular ? 'text-blue-600' : 'text-purple-600'}`}>
+                        <span className={`text-4xl font-bold ${plan.name === 'Starter' ? 'text-green-600' : 'text-primary'}`}>
                           {plan.price}
                         </span>
                         <span className="text-gray-500">
@@ -169,7 +169,7 @@ const Pricing: React.FC = () => {
                         transition={{ delay: 0.3 + index * 0.1 + featureIndex * 0.05 }}
                         className="flex items-start space-x-3"
                       >
-                        <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-blue-500' : 'text-green-500'}`} />
+                        <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-primary' : 'text-green-500'}`} />
                         <span className="text-gray-700 text-sm">
                           {feature}
                         </span>
@@ -183,7 +183,7 @@ const Pricing: React.FC = () => {
                     whileTap={{ scale: 0.95 }}
                     className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-300 ${
                       plan.popular
-                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg hover:shadow-xl'
+                        ? 'bg-primary text-white shadow-lg hover:shadow-xl'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -195,7 +195,7 @@ const Pricing: React.FC = () => {
                 <motion.div
                   className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 ${
                     plan.popular
-                      ? 'bg-gradient-to-r from-blue-400/20 to-purple-400/20 blur-xl'
+                      ? 'bg-gradient-to-r from-primary/20 to-white/20 blur-xl'
                       : 'bg-gradient-to-r from-gray-400/20 to-gray-400/20 blur-xl'
                   }`}
                 />
@@ -209,7 +209,7 @@ const Pricing: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border border-blue-100"
+          className="text-center mt-16 p-8 bg-primary/10 rounded-2xl border border-primary/20"
         >
           <div className="inline-flex items-center space-x-2 mb-4">
             <Star className="w-6 h-6 text-yellow-500 fill-yellow-500" />

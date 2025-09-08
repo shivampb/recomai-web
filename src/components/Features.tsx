@@ -11,25 +11,25 @@ const Features: React.FC = () => {
       icon: Search,
       title: "Smart Product Discovery",
       description: "Personalized recommendations powered by advanced machine learning algorithms that adapt to each customer's unique preferences and behavior patterns in real-time.",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-primary to-green-400"
     },
     {
       icon: Bot,
       title: "Agentic AI Bots",
       description: "Proactive shopping assistants that engage users with intelligent conversations, guiding them through personalized product journeys and answering questions instantly.",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-primary to-green-400"
     },
     {
       icon: BarChart3,
       title: "Revenue Growth Insights",
       description: "Advanced analytics dashboards providing deep insights into customer behavior, conversion patterns, and revenue optimization opportunities with actionable recommendations.",
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-primary to-green-400"
     },
     {
       icon: Zap,
       title: "Seamless Shopify Integration",
       description: "Plug-and-play setup that integrates with your existing Shopify store within minutes. No complex configurations or technical expertise required to get started.",
-      gradient: "from-orange-500 to-red-500"
+      gradient: "from-primary to-green-400"
     }
   ];
 
@@ -44,7 +44,7 @@ const Features: React.FC = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Powerful Features That{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-primary">
               Drive Results
             </span>
           </h2>
@@ -84,7 +84,7 @@ const Features: React.FC = () => {
 
                   {/* Content */}
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
                       {feature.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
@@ -94,18 +94,18 @@ const Features: React.FC = () => {
 
                   {/* Hover indicator */}
                   <motion.div
-                    className="w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+                    className="w-full h-1 bg-primary rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
                   />
                 </div>
 
                 {/* Animated border */}
                 <motion.div
-                  className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-blue-200 transition-colors duration-500"
+                  className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-primary/50 transition-colors duration-500"
                   animate={{
                     boxShadow: [
-                      '0 0 0 0 rgba(59, 130, 246, 0)',
-                      '0 0 0 4px rgba(59, 130, 246, 0.1)',
-                      '0 0 0 0 rgba(59, 130, 246, 0)',
+                      '0 0 0 0 rgba(12, 165, 101, 0)',
+                      '0 0 0 4px rgba(12, 165, 101, 0.1)',
+                      '0 0 0 0 rgba(12, 165, 101, 0)',
                     ],
                   }}
                   transition={{
@@ -126,7 +126,7 @@ const Features: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+          <button className="px-8 py-4 bg-primary text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
             Explore All Features
           </button>
         </motion.div>
