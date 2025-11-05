@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Twitter, Linkedin, Phone } from 'lucide-react';
 import { SiProducthunt } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const links = {
@@ -101,12 +102,21 @@ const Footer: React.FC = () => {
                 <ul className="space-y-3">
                   {items.map((item, index) => (
                     <li key={index}>
-                      <a
-                        href={item.href}
-                        className="text-gray-300 text-sm hover:text-[#6EE7B7] transition-colors duration-200"
-                      >
-                        {item.name}
-                      </a>
+                      {item.href.startsWith('/') ? (
+                        <Link
+                          to={item.href}
+                          className="text-gray-300 text-sm hover:text-[#6EE7B7] transition-colors duration-200"
+                        >
+                          {item.name}
+                        </Link>
+                      ) : (
+                        <a
+                          href={item.href}
+                          className="text-gray-300 text-sm hover:text-[#6EE7B7] transition-colors duration-200"
+                        >
+                          {item.name}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
