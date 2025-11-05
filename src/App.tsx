@@ -10,6 +10,7 @@ import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import FeaturesPage from './pages/FeaturesPage';
+import HelpCenterPage from './pages/HelpCenterPage';
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<><FeaturesPage /><Footer /></>} />
+          <Route path="/help-center" element={<><HelpCenterPage /><Footer /></>} />
         </Routes>
       </div>
     </Router>
